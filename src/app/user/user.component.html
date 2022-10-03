@@ -1,0 +1,10 @@
+﻿<div class="card mt-4">
+    <h4 class="card-header">You're logged in as User!!</h4>
+    <div class="card-body">
+        <h6>Users Dashboard</h6>
+        <div *ngIf="loading" class="spinner-border spinner-border-sm"></div>
+        <ul *ngIf="currentUser">
+            <li>{{currentUser.firstName}} {{currentUser.lastName}} Token : {{currentUserToken}}</li>
+        </ul>
+    </div>
+</div>
